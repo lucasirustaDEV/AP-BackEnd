@@ -34,7 +34,6 @@ com\ABML\ABML\controller\ExperienciaController.class
 com\ABML\ABML\controller\PersonaController.class
 com\ABML\ABML\security\dto\LoginUsuario.class
 com\ABML\ABML\service\SkillService.class
-com\ABML\ABML\WebConfig.class
 com\ABML\ABML\security\service\UserDetailsImpl.class
 com\ABML\ABML\security\service\RolService.class
 com\ABML\ABML\repository\EducacionRepository.class
