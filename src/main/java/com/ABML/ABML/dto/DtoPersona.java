@@ -1,5 +1,7 @@
 package com.ABML.ABML.dto;
 
+import java.util.Date;
+import javax.persistence.Temporal;
 import javax.validation.constraints.NotBlank;
 
 
@@ -12,16 +14,27 @@ public class DtoPersona {
     @NotBlank
     private String acerca;
     private String imgperfil;
-
+   @Temporal(javax.persistence.TemporalType.DATE)
+    private Date fechaNac;
+    private String mail;
+    private String ocupacion;
+    private String imgBanner;
+    private int idDomicilio;
+    
     public DtoPersona() {
     }
 
-    public DtoPersona(String nombre, String apellido, int edad, String acerca, String imgperfil) {
+    public DtoPersona(String nombre, String apellido, int edad, String acerca, String imgperfil, Date fechaNac, String mail, String ocupacion, String imgBanner, int idDomicilio) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.acerca = acerca;
         this.imgperfil = imgperfil;
+        this.fechaNac = fechaNac;
+        this.mail = mail;
+        this.ocupacion = ocupacion;
+        this.imgBanner = imgBanner;
+        this.idDomicilio = idDomicilio;
     }
 
     public String getNombre() {
@@ -63,7 +76,47 @@ public class DtoPersona {
     public void setImgperfil(String imgperfil) {
         this.imgperfil = imgperfil;
     }
-    
-    
+
+    public Date getFechaNac() {
+        return fechaNac;
+    }
+
+    public void setFechaNac(Date fechaNac) {
+        this.fechaNac = fechaNac;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getOcupacion() {
+        return ocupacion;
+    }
+
+    public void setOcupacion(String ocupacion) {
+        this.ocupacion = ocupacion;
+    }
+
+    public String getImgBanner() {
+        return imgBanner;
+    }
+
+    public void setImgBanner(String imgBanner) {
+        this.imgBanner = imgBanner;
+    }
+
+    public int getIdDomicilio() {
+        return idDomicilio;
+    }
+
+    public void setIdDomicilio(int idDomicilio) {
+        this.idDomicilio = idDomicilio;
+    }
+
+
     
 }

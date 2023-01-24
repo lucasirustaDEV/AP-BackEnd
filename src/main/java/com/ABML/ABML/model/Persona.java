@@ -1,9 +1,11 @@
 package com.ABML.ABML.model;
 
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -18,17 +20,15 @@ public class Persona {
     private int edad;
     @NotNull
     private String acerca;
-    private String imgperfil;
+    private String imgperfil;    
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date fechaNac;
+    private String mail;
+    private String ocupacion;
+    private String imgBanner;
+    private int idDomicilio;
 
     public Persona() {
-    }
-
-    public Persona(String nombre, String apellido, int edad, String acerca, String imgperfil) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-        this.acerca = acerca;
-        this.imgperfil = imgperfil;
     }
 
     public int getId() {
@@ -78,5 +78,59 @@ public class Persona {
     public void setImgperfil(String imgperfil) {
         this.imgperfil = imgperfil;
     }
-    
+
+    public Date getFechaNac() {
+        return fechaNac;
+    }
+
+    public void setFechaNac(Date fechaNac) {
+        this.fechaNac = fechaNac;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getOcupacion() {
+        return ocupacion;
+    }
+
+    public void setOcupacion(String ocupacion) {
+        this.ocupacion = ocupacion;
+    }
+
+    public String getImgBanner() {
+        return imgBanner;
+    }
+
+    public void setImgBanner(String imgBanner) {
+        this.imgBanner = imgBanner;
+    }
+
+    public int getIdDomicilio() {
+        return idDomicilio;
+    }
+
+    public void setIdDomicilio(int idDomicilio) {
+        this.idDomicilio = idDomicilio;
+    }
+
+    public Persona(String nombre, String apellido, int edad, String acerca, String imgperfil, Date fechaNac, String mail, String ocupacion, String imgBanner, int idDomicilio) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.acerca = acerca;
+        this.imgperfil = imgperfil;
+        this.fechaNac = fechaNac;
+        this.mail = mail;
+        this.ocupacion = ocupacion;
+        this.imgBanner = imgBanner;
+        this.idDomicilio = idDomicilio;
+    }
+
+
 }

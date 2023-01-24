@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://portfolio-lucas-ap.web.app")
+/*@CrossOrigin(origins = "https://portfolio-lucas-ap.web.app")*/
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/personas")
 /*@CrossOrigin(origins = {"https://portfolio-lucas-ap.web.app","http://localhost:4200"})*/
 public class PersonaController {
@@ -77,7 +78,7 @@ public class PersonaController {
             return new ResponseEntity(new Mensaje("El campo está vacío"), HttpStatus.BAD_REQUEST);
         }
         
-        /*VERIFICAR TODOS LOS CAMPOS*/
+        /*VERIFICAR TODOS LOS CAMPOS HACERLO DESDE EL FRONT*/
         
         Persona perso = personaS.getOne(id).get();
         
@@ -85,7 +86,12 @@ public class PersonaController {
         perso.setApellido(dtoPerso.getApellido());
         perso.setEdad(dtoPerso.getEdad());
         perso.setAcerca(dtoPerso.getAcerca());
-        perso.setImgperfil(dtoPerso.getAcerca());
+        perso.setImgperfil(dtoPerso.getImgperfil());
+        perso.setFechaNac(dtoPerso.getFechaNac());
+        perso.setMail(dtoPerso.getMail());
+        perso.setOcupacion(dtoPerso.getOcupacion());
+        perso.setImgBanner(dtoPerso.getImgBanner());
+        perso.setIdDomicilio(dtoPerso.getIdDomicilio());
         
         personaS.save(perso);
         

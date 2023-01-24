@@ -21,7 +21,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://portfolio-lucas-ap.web.app")
+/*@CrossOrigin(origins = "https://portfolio-lucas-ap.web.app")*/
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("explab")
 /*@CrossOrigin(origins = {"https://portfolio-lucas-ap.web.app","http://localhost:4200"})*/
 public class ExperienciaController {
@@ -41,7 +42,7 @@ public class ExperienciaController {
         if (experienciaS.existsByNombreE(dtoexp.getNombreE()))
             return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
         
-        Experiencia experiencia = new Experiencia(dtoexp.getNombreE(), dtoexp.getDescripcionE());
+        Experiencia experiencia = new Experiencia(dtoexp.getNombreE(), dtoexp.getDescripcionE(), dtoexp.getTareas(), dtoexp.getDesde(),dtoexp.getHasta(), dtoexp.getImglogo());
         experienciaS.save(experiencia);
         
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
@@ -61,6 +62,10 @@ public class ExperienciaController {
         Experiencia experiencia = experienciaS.getOne(id).get();
         experiencia.setNombreE(dtoexp.getNombreE());
         experiencia.setDescripcionE(dtoexp.getDescripcionE());
+        experiencia.setTareas(dtoexp.getTareas());
+        experiencia.setImglogo(dtoexp.getImglogo());
+        experiencia.setDesde(dtoexp.getDesde());
+        experiencia.setHasta(dtoexp.getHasta());
         
         experienciaS.save(experiencia);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);        
