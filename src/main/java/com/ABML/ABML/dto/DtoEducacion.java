@@ -7,14 +7,14 @@ public class DtoEducacion {
     private String nombreE;
     @NotBlank
     private String descripcionE;
-    private int desde;
-    private int hasta;
+    private String desde;
+    private String hasta;
     private String imglogo;
 
     public DtoEducacion() {
     }
 
-    public DtoEducacion(String nombreE, String descripcionE, int desde, int hasta, String imglogo) {
+    public DtoEducacion(String nombreE, String descripcionE, String desde, String hasta, String imglogo) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.desde = desde;
@@ -38,19 +38,19 @@ public class DtoEducacion {
         this.descripcionE = descripcionE;
     }
 
-    public int getDesde() {
+    public String getDesde() {
         return desde;
     }
 
-    public void setDesde(int desde) {
+    public void setDesde(String desde) {
         this.desde = desde;
     }
 
-    public int getHasta() {
+    public String getHasta() {
         return hasta;
     }
 
-    public void setHasta(int hasta) {
+    public void setHasta(String hasta) {
         this.hasta = hasta;
     }
 

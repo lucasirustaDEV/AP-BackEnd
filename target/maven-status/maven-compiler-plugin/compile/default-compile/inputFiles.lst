@@ -9,12 +9,16 @@ C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoInteg
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\AbmlApplication.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\security\dto\LoginUsuario.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\security\Entity\Usuario.java
+C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\model\Proyecto.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\security\service\RolService.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\model\Educacion.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\repository\PersonaRepository.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\security\jwt\JwtTokenFilter.java
+C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\repository\ProyectoRepository.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\controller\EducacionController.java
+C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\service\ProyectoService.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\service\SkillService.java
+C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\controller\ProyectoController.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\controller\PersonaController.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\repository\EducacionRepository.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\repository\ExperienciaRepository.java
@@ -28,6 +32,7 @@ C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoInteg
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\model\Experiencia.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\security\Entity\UsuarioPrincipal.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\security\controller\Mensaje.java
+C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\dto\DtoProyecto.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\security\service\UsuarioService.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\repository\SkillRepository.java
 C:\Users\lucas\Documents\ArgentinaPrograma\ProyectoIntegrador-ArgP\ProyectoIntegrador-ArgP\BackEnd\src\main\java\com\ABML\ABML\service\EducacionService.java

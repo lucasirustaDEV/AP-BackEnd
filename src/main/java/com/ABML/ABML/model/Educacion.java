@@ -12,14 +12,14 @@ public class Educacion {
     private int id;
     private String nombreE;
     private String descripcionE;
-    private int desde;
-    private int hasta;
+    private String desde;
+    private String hasta;
     private String imglogo;
 
     public Educacion() {
     }
 
-    public Educacion(String nombreE, String descripcionE, int desde, int hasta, String imglogo) {
+    public Educacion(String nombreE, String descripcionE, String desde, String hasta, String imglogo) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.desde = desde;
@@ -51,19 +51,19 @@ public class Educacion {
         this.descripcionE = descripcionE;
     }
 
-    public int getDesde() {
+    public String getDesde() {
         return desde;
     }
 
-    public void setDesde(int desde) {
+    public void setDesde(String desde) {
         this.desde = desde;
     }
 
-    public int getHasta() {
+    public String getHasta() {
         return hasta;
     }
 
-    public void setHasta(int hasta) {
+    public void setHasta(String hasta) {
         this.hasta = hasta;
     }
 
@@ -74,7 +74,6 @@ public class Educacion {
     public void setImglogo(String imglogo) {
         this.imglogo = imglogo;
     }
-
 
     
 }

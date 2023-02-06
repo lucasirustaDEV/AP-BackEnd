@@ -13,14 +13,14 @@ public class Experiencia {
     private String nombreE;
     private String descripcionE;
     private String tareas;
-    private int desde;
-    private int hasta;
+    private String desde;
+    private String hasta;
     private String imglogo;
 
     public Experiencia() {
     }
 
-    public Experiencia(String nombreE, String descripcionE, String tareas, int desde, int hasta, String imglogo) {
+    public Experiencia(String nombreE, String descripcionE, String tareas, String desde, String hasta, String imglogo) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.tareas = tareas;
@@ -61,19 +61,19 @@ public class Experiencia {
         this.tareas = tareas;
     }
 
-    public int getDesde() {
+    public String getDesde() {
         return desde;
     }
 
-    public void setDesde(int desde) {
+    public void setDesde(String desde) {
         this.desde = desde;
     }
 
-    public int getHasta() {
+    public String getHasta() {
         return hasta;
     }
 
-    public void setHasta(int hasta) {
+    public void setHasta(String hasta) {
         this.hasta = hasta;
     }
 
@@ -84,5 +84,6 @@ public class Experiencia {
     public void setImglogo(String imglogo) {
         this.imglogo = imglogo;
     }
+
     
 }
