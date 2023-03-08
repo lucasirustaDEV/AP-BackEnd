@@ -71,9 +71,9 @@ public class PersonaController {
         if(!personaS.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe ID"), HttpStatus.NOT_FOUND);
         }
-        if(personaS.existsByNombre(dtoPerso.getNombre()) && personaS.getByNombre(dtoPerso.getNombre()).get().getId() != id){
+        /*if(personaS.existsByNombre(dtoPerso.getNombre()) && personaS.getByNombre(dtoPerso.getNombre()).get().getId() != id){
             return new ResponseEntity(new Mensaje ("Nombre repetido"), HttpStatus.BAD_REQUEST);
-        }
+        }*/
         if(StringUtils.isBlank(dtoPerso.getNombre())){
             return new ResponseEntity(new Mensaje("El campo está vacío"), HttpStatus.BAD_REQUEST);
         }
@@ -91,7 +91,7 @@ public class PersonaController {
         perso.setMail(dtoPerso.getMail());
         perso.setOcupacion(dtoPerso.getOcupacion());
         perso.setImgBanner(dtoPerso.getImgBanner());
-        perso.setIdDomicilio(dtoPerso.getIdDomicilio());
+        perso.setDomicilio(dtoPerso.getDomicilio());
         
         personaS.save(perso);
         

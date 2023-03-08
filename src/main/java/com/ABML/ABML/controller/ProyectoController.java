@@ -58,9 +58,9 @@ public class ProyectoController {
         if(StringUtils.isBlank(dtoProy.getNombre())){
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);           
         }
-        if(proyectoS.existsByNombre(dtoProy.getNombre())){
+        /*if(proyectoS.existsByNombre(dtoProy.getNombre())){
             return new ResponseEntity(new Mensaje("El nombre ya existe"), HttpStatus.BAD_REQUEST);
-        }
+        }*/
         Proyecto proy = new Proyecto (
             dtoProy.getNombre(), dtoProy.getDescripcion(), dtoProy.getImgproyecto(), dtoProy.getLinkproyecto()
         );
@@ -73,9 +73,9 @@ public class ProyectoController {
         if(!proyectoS.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe ID"), HttpStatus.NOT_FOUND);
         }
-        if(proyectoS.existsByNombre(dtoProy.getNombre()) && proyectoS.getByNombre(dtoProy.getNombre()).get().getId() != id){
+        /*if(proyectoS.existsByNombre(dtoProy.getNombre()) && proyectoS.getByNombre(dtoProy.getNombre()).get().getId() != id){
             return new ResponseEntity(new Mensaje ("Nombre repetido"), HttpStatus.BAD_REQUEST);
-        }
+        }*/
         if(StringUtils.isBlank(dtoProy.getNombre())){
             return new ResponseEntity(new Mensaje("El campo está vacío"), HttpStatus.BAD_REQUEST);
         }

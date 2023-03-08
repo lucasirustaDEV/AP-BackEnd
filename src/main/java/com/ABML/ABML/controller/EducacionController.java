@@ -58,9 +58,9 @@ public class EducacionController {
         if(StringUtils.isBlank(dtoEdu.getNombreE())){
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);           
         }
-        if(sEducacion.existsByNombreE(dtoEdu.getNombreE())){
+        /*if(sEducacion.existsByNombreE(dtoEdu.getNombreE())){
             return new ResponseEntity(new Mensaje("El nombre ya existe"), HttpStatus.BAD_REQUEST);
-        }
+        }*/
         Educacion edu = new Educacion (
             dtoEdu.getNombreE(), dtoEdu.getDescripcionE(), dtoEdu.getDesde(),dtoEdu.getHasta(),dtoEdu.getImglogo()
         );
@@ -73,9 +73,9 @@ public class EducacionController {
         if(!sEducacion.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe ID"), HttpStatus.NOT_FOUND);
         }
-        if(sEducacion.existsByNombreE(dtoEdu.getNombreE()) && sEducacion.getByNombreE(dtoEdu.getNombreE()).get().getId() != id){
+        /*if(sEducacion.existsByNombreE(dtoEdu.getNombreE()) && sEducacion.getByNombreE(dtoEdu.getNombreE()).get().getId() != id){
             return new ResponseEntity(new Mensaje ("Nombre repetido"), HttpStatus.BAD_REQUEST);
-        }
+        }*/
         if(StringUtils.isBlank(dtoEdu.getNombreE())){
             return new ResponseEntity(new Mensaje("El campo está vacío"), HttpStatus.BAD_REQUEST);
         }

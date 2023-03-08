@@ -26,9 +26,22 @@ public class Persona {
     private String mail;
     private String ocupacion;
     private String imgBanner;
-    private int idDomicilio;
+    private String domicilio;
 
     public Persona() {
+    }
+
+    public Persona(String nombre, String apellido, int edad, String acerca, String imgperfil, Date fechaNac, String mail, String ocupacion, String imgBanner, String domicilio) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.acerca = acerca;
+        this.imgperfil = imgperfil;
+        this.fechaNac = fechaNac;
+        this.mail = mail;
+        this.ocupacion = ocupacion;
+        this.imgBanner = imgBanner;
+        this.domicilio = domicilio;
     }
 
     public int getId() {
@@ -111,25 +124,12 @@ public class Persona {
         this.imgBanner = imgBanner;
     }
 
-    public int getIdDomicilio() {
-        return idDomicilio;
+    public String getDomicilio() {
+        return domicilio;
     }
 
-    public void setIdDomicilio(int idDomicilio) {
-        this.idDomicilio = idDomicilio;
-    }
-
-    public Persona(String nombre, String apellido, int edad, String acerca, String imgperfil, Date fechaNac, String mail, String ocupacion, String imgBanner, int idDomicilio) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-        this.acerca = acerca;
-        this.imgperfil = imgperfil;
-        this.fechaNac = fechaNac;
-        this.mail = mail;
-        this.ocupacion = ocupacion;
-        this.imgBanner = imgBanner;
-        this.idDomicilio = idDomicilio;
+    public void setDomicilio(String domicilio) {
+        this.domicilio = domicilio;
     }
 
 

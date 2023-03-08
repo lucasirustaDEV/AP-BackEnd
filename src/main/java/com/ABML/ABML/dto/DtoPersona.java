@@ -19,12 +19,12 @@ public class DtoPersona {
     private String mail;
     private String ocupacion;
     private String imgBanner;
-    private int idDomicilio;
-    
+    private String domicilio;
+
     public DtoPersona() {
     }
 
-    public DtoPersona(String nombre, String apellido, int edad, String acerca, String imgperfil, Date fechaNac, String mail, String ocupacion, String imgBanner, int idDomicilio) {
+    public DtoPersona(String nombre, String apellido, int edad, String acerca, String imgperfil, Date fechaNac, String mail, String ocupacion, String imgBanner, String domicilio) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
@@ -34,7 +34,7 @@ public class DtoPersona {
         this.mail = mail;
         this.ocupacion = ocupacion;
         this.imgBanner = imgBanner;
-        this.idDomicilio = idDomicilio;
+        this.domicilio = domicilio;
     }
 
     public String getNombre() {
@@ -109,14 +109,14 @@ public class DtoPersona {
         this.imgBanner = imgBanner;
     }
 
-    public int getIdDomicilio() {
-        return idDomicilio;
+    public String getDomicilio() {
+        return domicilio;
     }
 
-    public void setIdDomicilio(int idDomicilio) {
-        this.idDomicilio = idDomicilio;
+    public void setDomicilio(String domicilio) {
+        this.domicilio = domicilio;
     }
-
+    
 
     
 }

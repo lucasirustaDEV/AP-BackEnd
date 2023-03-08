@@ -39,8 +39,8 @@ public class ExperienciaController {
     public ResponseEntity<?> create(@RequestBody DtoExperiencia dtoexp){
         if(StringUtils.isBlank(dtoexp.getNombreE()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
-        if (experienciaS.existsByNombreE(dtoexp.getNombreE()))
-            return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
+        /*if (experienciaS.existsByNombreE(dtoexp.getNombreE()))
+            return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);*/
         
         Experiencia experiencia = new Experiencia(dtoexp.getNombreE(), dtoexp.getDescripcionE(), dtoexp.getTareas(), dtoexp.getDesde(),dtoexp.getHasta(), dtoexp.getImglogo());
         experienciaS.save(experiencia);
@@ -53,8 +53,8 @@ public class ExperienciaController {
         if(!experienciaS.existsById(id))
             return new ResponseEntity(new Mensaje ("El ID no existe"), HttpStatus.BAD_REQUEST);
         
-        if(experienciaS.existsByNombreE(dtoexp.getNombreE()) && experienciaS.getByNombreE(dtoexp.getNombreE()).get().getId() != id)
-            return new ResponseEntity(new Mensaje("Esa experiencia ya existe"), HttpStatus.BAD_REQUEST);
+        /*if(experienciaS.existsByNombreE(dtoexp.getNombreE()) && experienciaS.getByNombreE(dtoexp.getNombreE()).get().getId() != id)
+            return new ResponseEntity(new Mensaje("Esa experiencia ya existe"), HttpStatus.BAD_REQUEST);*/
         
         if(StringUtils.isBlank(dtoexp.getNombreE()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
