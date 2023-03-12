@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,7 +16,7 @@ public class EducacionService {
     EducacionRepository rEducacion;
     
     public List<Educacion> list(){
-        return rEducacion.findAll();
+        return rEducacion.findAll(Sort.by(Sort.Direction.DESC, "hasta"));
     }
     
     public Optional<Educacion> getOne(int id){

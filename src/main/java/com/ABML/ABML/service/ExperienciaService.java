@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -19,7 +20,7 @@ public class ExperienciaService {
     ExperienciaRepository experienciaR;
     
     public List<Experiencia> list(){
-       return experienciaR.findAll();
+       return experienciaR.findAll(Sort.by(Sort.Direction.DESC, "hasta"));
     }
     
     public Optional<Experiencia> getOne(int id){
